@@ -1,11 +1,7 @@
 body {
-  background-color: lightblue;
+  background-color: DarkOliveGreen;
   font-family: Arial, Helvetica, sans-serif;
   margin: 0;
-  /*background-image: url("myphoto.JPG");
-  background-repeat: no-repeat;
-  background-position: right top;
-  background-size: 50px 50px;*/
 }
 
 html {
