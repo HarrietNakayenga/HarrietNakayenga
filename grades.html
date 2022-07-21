@@ -1,0 +1,67 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head> 
+<title>Retrieve Grade</title> 
+    <meta charset="utf-8">   
+    <link rel="stylesheet" type="text/css" href="grades.css">
+    <link rel="icon" type="image/jpg" href="miu.JPG">
+
+
+</head> <h1>Retrieve your grade</h1>
+<body> 
+    <div class="main"><a href= "https://harrietnakayenga.github.io/HarrietNakayenga/">BACK TO HOME</a>
+		
+        <fieldset class="gradeform"><legend class="gradesform">Student Grading Form</legend>
+            <form action="http://mumstudents.org/params.php">
+                <label for="sname">Student Name:</label>
+                <input type="text" id="sname" name="sname" placeholder="Full Name"pattern="[A-Za-z]{9}"><br><br>
+                <label for="studid">Student ID:</label>
+                <input type="text" id="studid" name="studid" placeholder="614618" maxlength="6" pattern="[0-9]{6}"><br>
+
+                
+                <!--optionals--->
+                <p><strong>Select the course assignment from list below:</strong></p>
+                <select name="Course Labs">
+                    <optgroup label=" Phase1 Assignments">
+                    <option selected>STC1</option>
+                    </optgroup>
+                    <optgroup label=" PhaseII Assignments">
+                    <option>Fundamental Programming Practises</option>
+                    <option>Modern Programming Practises</option>
+                    <option>Web Application Programming</option>
+                    <option>Enterprise Architecture</option>
+                    <option>Software Architecture</option>
+                    <option>Algorithms</option></optgroup>
+                </select><br>
+
+                    <!--radio button-->
+                    <p><strong>Select your entry from list below:</strong></p>
+                    <label><input type="radio" name="Student's Entry" value="January">January 2022</label>
+                    <label><input type="radio" name="Student's Entry" value="April">April 2022</label>
+                    <label><input type="radio" name="Student's Entry" value="August">August 2022</label>
+                    <label><input type="radio" name="Student's Entry" value="November">November 2022</label><br/>
+
+                    <!--checkbox-->
+
+                    <input type="checkbox" name="confirm">I confirm that I have entered my own details.<br>
+
+                    <!--Others-->
+
+                </fieldset><br>
+               
+                <fieldset><legend>Terms and Conditions</legend>
+                    <p> I, <Strong>......................................................</Strong>, hereby confirm that all the details above are mine.<br/>
+                    Any violation of Maharishi International University policy will lead to termination.</p>
+                    <label for="date">Date:</label>
+                     <input type="date" id="Date" name="date"><br><br>
+
+                    <input type="submit" name="submit">
+                    <input type="reset" name="reset"><br><br>
+                    <a href="http://validator.w3.org/nu/?doc=https://harrietnakayenga.github.io/HarrietNakayenga/index.html" target="_blank">
+                        <img id='footImg' src="https://manalabs.org/img/w3c-html.png" alt="HTML validator icon" /></a>
+                    <a href="http://validator.w3.org/nu/?doc=https://harrietnakayenga.github.io/HarrietNakayenga/index.html" target="_blank">
+                        <img id='footImg' src="https://manalabs.org/img/w3c-css.png" alt="CSS validator icon" /></a>
+        			       
+</div>
+</body> 
+</html> 
