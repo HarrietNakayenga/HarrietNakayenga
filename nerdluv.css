@@ -1,0 +1,72 @@
+body{
+    background-color: white;
+    width: 60%;
+    padding-left: 1em;
+}
+
+/*body > div, form {
+	overflow: hidden;
+	width: 35em;
+}*/
+
+div {
+	overflow: hidden;
+}
+.home{
+vertical-align: middle;
+}
+.appform{
+    width:200px;
+background-color: plum;
+text-align: center;
+font-size: 2em;
+border-radius: 20px;
+padding :20px;
+margin:8%;
+box-shadow:rgba(0,0,0,0);
+}
+
+/*fieldset {
+    background-color: #eeeeee;
+  }*/
+  
+  legend {
+    border-style: solid;
+    border-width: 1px;
+    /*background-color: gray;
+    color: white;*/
+    padding: 5px 10px;
+  }
+/*label {
+   display: block;
+    margin-left: auto;
+}*/
+
+p{
+columns: 1;
+text-align: justify;
+}
+
+a{
+    color: red;
+    text-decoration: none;
+}
+a:hover {
+	background-color: #FFA;
+}
+
+input[type="text"]{
+font-family: Arial;
+background-color:white;
+color: Black;
+font-weight: bold;
+}
+button{
+    background-color:pink;
+    }
+fieldset{
+    background-color: #E0E0FF;
+	border: 2px outset gray;
+	border-radius: 10px;
+    padding-right:20px;
+}
