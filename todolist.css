@@ -7,13 +7,13 @@
 }
 ::selection{
   color: #ffff;
-  background: rgb(142, 73, 232);
+ background: rgb(142, 73, 232);
 }
 body{
   width: 100%;
   height: 100vh;
-  /* overflow: hidden; */
   padding: 10px;
+  background-color: white;
   background: linear-gradient(to bottom, #68EACC 0%, #497BE8 100%);
 }
 .wrapper{
@@ -49,12 +49,12 @@ body{
   border-color: #8E49E8;
 }
 .inputField button{
-  width: 50px;
+  width: 80px;
   height: 100%;
   border: none;
   color: #fff;
   margin-left: 5px;
-  font-size: 21px;
+  font-size: 15px;
   outline: none;
   background:gray; /*#8E49E8;*/
   cursor: pointer;
