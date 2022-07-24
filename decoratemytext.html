@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Text Decorator</title>
+    <link href="decoratemytext.css" rel="stylesheet" type="text/css"/>
+
+    <!--
+    This is a widely-used JavaScript library named jQuery that has
+    many useful functions which we need.
+    Please don't remove this link or change its URL; leave it as-is!
+    -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+    <!-- link to your script file here -->
+    <script src="decoratemytext.js"></script>
+
+</head>
+<body>
+<h1>Text Decorator</h1>
+
+<div>
+    <img alt="very decorated!" src="images/decorated.gif"/>
+</div>
+
+<!-- Your UI controls go here -->
+<fieldset>
+    <legend>Text</legend>
+    <textarea cols="30" id="textarea" placeholder="Sample Item 1" rows="4"></textarea>
+</fieldset>
+
+<fieldset>
+    <legend>Decoration</legend>
+    <input onclick="interval()" type="button" value="Bigger Decorations!"/> <br/> <br/>
+    <input id="bling" onchange="boldText()" type="checkbox" value="bling"/> Bling
+    <input onclick="pig()" type="button" value="Igpay Atinlay"/>
+    <input onclick="malkovitch()" type="button" value="Malkovich"/>
+</fieldset>
+<div id="validation">
+<a href="http://validator.w3.org/nu/?doc=https://harrietnakayenga.github.io/HarrietNakayenga/decoratemytext.html" target="_blank">
+        <img id='footImg' src="https://manalabs.org/img/w3c-html.png" alt="HTML validator icon" /></a>
+<a href="http://validator.w3.org/nu/?doc=https://harrietnakayenga.github.io/HarrietNakayenga/decoratemytext.css" target="_blank">
+        <img id='footImg1' src="https://manalabs.org/img/w3c-css.png" alt="CSS validator icon" /></a>
+<a href="https://webster.cs.washington.edu/jslint/?referer">
+            <img id ='footImg2' src="https://webster.cs.washington.edu/w3c-js.png" alt="JS Validator icon" /></a>
+        
+
+</div>
+
+</body>
+</html>
