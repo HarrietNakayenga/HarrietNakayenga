@@ -31,10 +31,17 @@ body{
 }
 
 /*html and css validation icons on a bottom right fixed position and is opaque */
-a {
+#footImg1 {
     position: fixed;
-    bottom: 10px;
+    bottom: 5px;
     right: 10px;
     opacity: 0.5;
     text-align: right;
+}
+#footImg{
+    position: fixed;
+    bottom: 40px;
+    right: 10px;
+    opacity: 0.5;
+    text-align: right;  
 }
