@@ -1,6 +1,6 @@
-exports.guessnumber = function (req, res, vals) {
+exports.numberguess = function (req, res, vals) {
   var score = 0;
-  let hidden = parseInt(vals.get("quiznumber"));
+  let hidden = parseInt(vals.get("numberquiz"));
   let youranswer = parseInt(vals.get("youranswer"));
   let prevscore = parseInt(vals.get("score"));
    
@@ -12,7 +12,7 @@ exports.guessnumber = function (req, res, vals) {
     pow: [1, 2, 4, 8, 16],
   };
   const answer = [9, 8, 36, 13, 32];
-  let quiznumber = 0;
+  let numberquiz = 0;
   score = score + prevscore;
 
   if (!hidden) {
@@ -81,8 +81,8 @@ function displayQuestion(req, res, list, score, hidden) {
   res.write("</head>");
   res.write("<body>");
   res.write('<form action="http://localhost:8080/">');
-  res.write("<label name=quiznumber>");
-  res.write(`<input type="hidden" name="quiznumber" value=${hidden} />`);
+  res.write("<label name=numberquiz>");
+  res.write(`<input type="hidden" name="numberquiz" value=${hidden} />`);
   res.write("<div>");
   res.write("<p> your score is :");
   res.write(`<input type="text" name="score" value=${score} readonly/>`);

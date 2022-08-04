@@ -5,6 +5,6 @@ var output = require('./NumberQuiz.js');
 
 http.createServer(function (req, res) {
     var q = new URL(req.url, "https://localhost:8080/");
-    output.guessnumber(req, res, q.searchParams);
+    output.numberguess(req, res, q.searchParams);
   })
   .listen(8080);
