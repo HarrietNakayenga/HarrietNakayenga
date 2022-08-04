@@ -1,19 +1,15 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 "use strict";
 $(document).ready(function () {
 
     var count = 0;//count variable for left and right positioning
-    var arr = []; //array used for storing the filled position for shuffling
-    var EMPTY_SQUARE = {};//Object which stores and updates the empty div let and top
+    var arr = []; //array  for storing the filled position for shuffling
+    var EMPTY_SQUARE = {};//Object to store and update the empty div top and left
     EMPTY_SQUARE.leftx = "300px";//initial left and top positions respectively
     EMPTY_SQUARE.toppx = "300px";
 
 
-//function for setting the position and css for the filled squares
+//function to set position and css for the filled squares
     $('#puzzlearea div').each(function ()
     {
         var filledSquares = {};
@@ -29,7 +25,7 @@ $(document).ready(function () {
         count++;
     });
 
-//this function checks if the square can be moved, and swaps the value for emptysquare
+    //to check if the square can be moved, and swap the value for emptysquare
     $('.puzzlepiece').click(function ()
     {
 
@@ -53,7 +49,7 @@ $(document).ready(function () {
 //shuffle algorithm, this changes the index of the divs stored as objects in the array
     $('#shufflebutton').click(function () {
 
-//        console.log(arr); //for debugging purpose
+//        console.log(arr); 
         var i = 0, j = 0,suff=0, temp = null;
 
         for (i = arr.length - 1; i > 0; i -= 1) {
@@ -62,7 +58,7 @@ $(document).ready(function () {
             arr[i] = arr[j];
             arr[j] = temp;
         }
-        //        console.log(arr); //for debugging purpose
+        //        console.log(arr); for debugging purposes
 
         //setting the css from the shuffled array
         $('#puzzlearea div').each(function ()
@@ -97,7 +93,7 @@ $(document).ready(function () {
         $(this).removeClass('movablepiece');
     });
 
-    //helper function for finding the neighbouring elements on the left
+    //helper function to find neighbouring elements on the left
     var clickableleft = function (changedleft, changedtop)
     {
         if (parseInt(changedtop) === parseInt(EMPTY_SQUARE.toppx))
@@ -113,12 +109,12 @@ $(document).ready(function () {
         }
     };
 
-    //helper function for finding the neighbouring elements on the right
+    //helper function to find neighbouring elements on the right
     var clickableTop = function (changedleft, changedtop)
     {
         if (parseInt(changedleft) === parseInt(EMPTY_SQUARE.leftx))
         {
-            //a simplelogic for checking the element neighbours an empty div
+            //logic to check if the element neighbours an empty div
             if (parseInt(changedtop) + 100 === parseInt(EMPTY_SQUARE.toppx) || parseInt(changedtop) - 100 === parseInt(EMPTY_SQUARE.toppx))
             {
 
