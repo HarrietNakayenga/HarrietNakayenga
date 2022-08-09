@@ -1,0 +1,42 @@
+body {
+  margin:20px;
+  background-color:hsl(0, 12%, 65%) ;
+  padding: 2em 2em 4em;
+  max-width: 800px;
+  min-height:100%;
+}
+
+html{
+    height: 100%;
+    background-color: #484a4a;
+    background-image: linear-gradient(270deg,rgb(146, 243, 243) 0%,rgb(155, 249, 249) 100%);
+}
+section {
+  background-color: #f0ecec;
+}
+
+.banner > h1 {
+  margin: 0px;
+  color: rgb(8, 8, 13) ;
+}
+
+.banner {
+  background-color: rgb(68, 60, 106);
+}
+
+.banner,
+section {
+  padding: 10px;
+}
+
+ol,
+.validators {
+  padding: 30px;
+  line-height: 30px;
+  margin-top: 0px;
+}
+.validators {
+  text-align: left;
+  position: static;
+  bottom: 0px;
+}
